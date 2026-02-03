@@ -156,7 +156,7 @@ router.delete('/items/:itemId', cartController.removeItem);
  * /api/cart:
  *   delete:
  *     summary: Limpar carrinho
- *     description: Remove todos os itens do carrinho do usuário'
+ *     description: Remove todos os itens do carrinho do usuário
  *     tags:
  *       - Carrinho
  *     security:

@@ -32,7 +32,7 @@ router.use(authMiddleware);
  *         name: status
  *         schema:
  *           type: string
- *         description: Filtrar por status do pedido (ex.: PENDENTE, EM_PREPARO, CONCLUIDO, CANCELADO)
+ *         description: "Filtrar por status do pedido (ex: PENDENTE, EM_PREPARO, CONCLUIDO, CANCELADO)"
  *       - in: query
  *         name: startDate
  *         schema:
@@ -214,7 +214,7 @@ router.get('/admin/all', adminMiddleware, validateQuery(orderQuerySchema), order
  * /api/orders/admin/{id}/status:
  *   patch:
  *     summary: Atualizar status do pedido (admin)
- *     description: Atualiza o status de um pedido (ex.: PENDENTE, EM_PREPARO, CONCLUIDO, CANCELADO), se for user admin
+ *     description: "Atualiza o status de um pedido (ex: PENDENTE, EM_PREPARO, CONCLUIDO, CANCELADO), se for user admin"
  *     tags:
  *       - Pedidos (Admin)
  *     security:

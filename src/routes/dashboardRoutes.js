@@ -96,7 +96,7 @@ router.get('/peak-hours', dashboardController.getPeakHours);
  * /api/dashboard/orders-by-status:
  *   get:
  *     summary: Pedidos por status
- *     description: Retorna o total de pedidos agrupados por status (ex.: PENDENTE, EM_PREPARO, CONCLUIDO, CANCELADO), se user admin
+ *     description: "Retorna o total de pedidos agrupados por status (ex: PENDENTE, EM_PREPARO, CONCLUIDO, CANCELADO), se user admin"
  *     tags:
  *       - Dashboard
  *     security:
