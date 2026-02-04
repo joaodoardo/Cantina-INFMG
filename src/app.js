@@ -45,10 +45,7 @@ app.use(helmet({
  * - origin: URL do frontend permitida
  * - credentials: Permite envio de cookies
  */
-app.use(cors({
-  origin: process.env.FRONTEND_URL || 'https://cantina-ifnmg.netlify.app',
-  credentials: true,
-}));
+app.use(cors());
 
 // ============================================
 // PARSERS DE REQUISICAO
